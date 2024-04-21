@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Chocolate Pack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Custom Chocolate Pack</h1>
+
+<div id="chocolates">
+    <div class="chocolate" data-price="2.50">
+        Dark Chocolate - $2.50
+        <button class="minus">-</button>
+        <input type="number" class="quantity" min="0" max="8" value="0">
+        <button class="plus">+</button>
+    </div>
+    <div class="chocolate" data-price="3.00">
+        Milk Chocolate - $3.00
+        <button class="minus">-</button>
+        <input type="number" class="quantity" min="0" max="8" value="0">
+        <button class="plus">+</button>
+    </div>
+    <div class="chocolate" data-price="3.00">
+        Silk Chocolate - $8.00
+        <button class="minus">-</button>
+        <input type="number" class="quantity" min="0" max="8" value="0">
+        <button class="plus">+</button>
+    </div>
+    <div class="chocolate" data-price="3.00">
+        walnut Chocolate - $3.00
+        <button class="minus">-</button>
+        <input type="number" class="quantity" min="0" max="8" value="0">
+        <button class="plus">+</button>
+    </div>
+    <!-- Add other chocolates similarly -->
+</div>
+
+<div id="selected-items">
+    <h2>Selected Items:</h2>
+    <ul></ul>
+    <h2>Total Price: <span id="total-price">$0.00</span></h2>
+    <h2>Chocolates Count: <span id="chocolates-count">0</span>/8</h2>
+</div>
+
+<script src="customPack.js"></script>
+
+</body>
+</html>
